@@ -3,10 +3,7 @@ from deap import base, creator, tools, algorithms
 
 # Define evaluation function (this is a mock function, replace this with your actual evaluation function)
 def evaluate(individual):
-    # Here 'individual' represents the parameters for the neural network
-    # You'll need to replace this with your actual evaluation function that trains the neural network
-    # and evaluates its performance
-    # Return a fitness value (here, a random number is used as an example)
+    #either take a dataset and return column values from the dataset or return random values from the dataset.
     return random.random(),
 
 # Define genetic algorithm parameters
@@ -46,7 +43,7 @@ for gen in range(GENERATIONS):
     population = toolbox.select(offspring, k=len(population))
 
 # Get the best individual from the final population
-best_individual = tools.selBest(population, k=1)[0]
+best_individual = tools.selBest(population, k=1)[0]  #selects the best parameter among all the values obtained by passing random values.
 best_params = best_individual
 
 # Print the best parameters found
