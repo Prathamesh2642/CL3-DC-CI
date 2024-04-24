@@ -1,5 +1,7 @@
 #first run the server side code in the terminal with the command -
 #  python practical1_factorial_server.py 
+# then run the client side in the terminal with the command -
+#  python practical1_factorial_client.py
 import xmlrpc.client 
 
 # Create an XML-RPC client 
