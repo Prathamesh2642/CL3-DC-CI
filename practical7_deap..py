@@ -3,7 +3,6 @@ from deap import base, creator, tools, algorithms
 
 # Define the evaluation function (minimize a simple mathematical function)
 def eval_func(individual):
-    # Example evaluation function (minimize a quadratic function)
     return sum(x ** 2 for x in individual),
 
 # DEAP setup
