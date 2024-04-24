@@ -1,3 +1,6 @@
+# run this code first in the terminal with the command -
+# python practical1_factorial_server.py
+
 from xmlrpc.server import SimpleXMLRPCServer
 from xmlrpc.server import SimpleXMLRPCRequestHandler
 
